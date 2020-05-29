@@ -1,0 +1,125 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+header {
+  margin-top: 20px;
+}
+
+#navbar {
+    width: 100%;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0% auto;
+    text-align: center;
+}
+
+#navbar > header {
+    font-size: 2.0em;
+    font-weight: bold;
+    padding: 2% 0%;
+}
+
+#navbar #menu-opciones {
+    border: 10px double black;
+    margin: 0% 5%;
+}
+
+#menu-opciones .nav-link {
+    display: block;
+    padding: 2% 0%;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+#menu-opciones .nav-link:hover {
+    background: #ffffff;
+}
+
+#menu-opciones li:last-child a{
+    border-bottom: 0px;
+}
+
+#main-doc {
+    width: 90%;
+    min-width: 400px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main-section {
+    margin-top: 3%;
+}
+
+.main-section header{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.main-section p, .main-section > ul > li {
+    font-size: 1.1em;
+}
+
+.main-section > ul > li {
+    list-style: disc;
+    margin-left: 5%;
+}
+
+.main-section > ul > li > ul > li {
+    list-style: circle;
+    font-size: 1.0em;
+    margin-left: 5%;
+}
+
+.main-section code {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 2% 0% 2% 5%;
+    background-color: gainsboro;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0px 10px 10px;
+}
+
+@media (min-width: 800px) {
+
+    #navbar {
+        width: 30%;
+        height: 100vh;
+        position: fixed;
+        margin: 0%;
+    }
+
+    #navbar > header {
+        padding: 5% 0%;
+        font-size: 1.7em;
+    }
+
+    #menu-opciones .nav-link {
+        padding: 5% 0%;
+        font-size: 1.5em;
+    }
+
+    #main-doc {
+        padding-left: 35%;
+        width: 60%;
+    }
+
+    .main-section {
+        margin-top: 0%;
+    }
+}
